@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Nav - Bar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light w-100 fixed-top mx-auto" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" id="visibleLogo" href="#">
+                <img src="./Assets/Images/Logo (1).jpg" alt="Logo">
+            </a>
+            <a class="navbar-brand hide" id="invisibleLogo" href="#">
+                <img src="./Assets/Images/Logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link blackitalic-txt" href="#history-section">01. HISTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blackitalic-txt" href="#Team">02. TEAM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav-Bar -->
+
+
+    <!-- Main-section -->
+
+    <div class="main-section w-100 h-100">
+        <img src="./Assets/Images/Mountain.jpg" alt="Your Image Description" class="img-fluid mx-auto d-block">
+    </div>
+
+    <!-- Main-section -->
+
+    <!-- History-section -->
+
+    <div class="History_section w-100" id="history-section">
+        <div class="History-section-text container justify-content-around w-75">
+            <div class="row">
+                <div class="col-auto d-flex align-items-end">
+                    <h1 class="Number-1 ">01.</h1>
+                </div>
+                <div class="col history-text">
+                    <h3>History</h3>
+                </div>
+            </div>
+            <div class="Paragraph-section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+            </div>
+        </div>  
+        <div class="History-carosuel-section d-flex justify-content-center">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 6"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 7"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 8"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 9"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 10"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel2.jpg" alt="Image 11"></div>
+                    <div class="slide"><img src="./Assets/Images/Carosuel1.jpg" alt="Image 12"></div>
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>            
+        </div>      
+    </div>
+    <div class=" container justify-content-around climb-text">
+        <div class="row">
+            <div class="col-auto d-flex align-items-end">
+                <h1 class="Number-1">02.</h1>
+            </div>
+            <div class="col-auto history-text">
+                <h3>Climb</h3>
+            </div>
+            <div class="col-sm-8 climb-paragraph">
+                <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+            </div>
+        </div>
+    </div>  
+
+    <!-- History-section -->
+
+    <!-- Team-section -->
+    <div class="container-fluid w-100 Team-Mountain-container" id="Team">
+        <div class="row BabasNeue Team-Mountain-text mx-auto">
+            <div class="col-auto Team-Mountain-text1 selected" onclick="toggleBackground(this)"> <!-- Adding 'selected' class here -->
+                <h3>MOUNTAIN 1</h3>
+            </div>
+            <div class="col-auto Team-Mountain-text2" onclick="toggleBackground(this)"> <!-- Adding onclick event -->
+                <h3>MOUNTAIN 2</h3>
+            </div>
+        </div>
+    </div>
+    <div class="Tab1">
+        <div class="container Tabs">
+            <div class="row Tab-content">
+                <h3>SCHEDULE</h3>
+                <div class="col-auto">
+                    <p class="Tabs-row1">25 Nov 2016</p>
+                    <p class="Tabs-row2">28 Nov 2016</p>
+                    <p class="Tabs-row3">18 Dec 2016</p>
+                    <p class="Tabs-row4">7 Jan 2017</p>
+                </div>
+                <div class="col-auto">
+                    <p class="Tabs-row1">Vestibulum viverra</p>
+                    <p class="Tabs-row2">Vestibulum viverra</p>
+                    <p class="Tabs-row3">Vestibulum viverra</p>
+                    <p class="Tabs-row4">Vestibulum viverra</p>
+                </div>
+            </div>
+        </div>                      
+    </div>
+    <div class="Tab2 hide">
+        <div class="container Tabs ">
+            <div class="row Tab-content">
+                <h1>SCHEDULE</h1>
+                <div class="col-auto">
+                    <p class="Tabs-row1">17 Nov 2016</p>
+                    <p class="Tabs-row2">13 Nov 2016</p>
+                    <p class="Tabs-row3">28 Dec 2016</p>
+                    <p class="Tabs-row4">9 Jan 2017</p>
+                </div>
+                <div class="col-auto">
+                    <p class="Tabs-row1">Vestibulum viverra</p>
+                    <p class="Tabs-row2">Vestibulum viverra</p>
+                    <p class="Tabs-row3">Vestibulum viverra</p>
+                    <p class="Tabs-row4">Vestibulum viverra</p>
+                </div>
+            </div>
+        </div>                      
+    </div>
+    <footer class="container-fluid Footer d-flex ">
+        <div class="Footer-contents row d-flex justify-content-between align-items-center mx-auto">
+            <img class="col-auto footerlogo" src="./Assets/Images/Footer-logo.png" alt="" srcset="">
+            <p class="col-auto">COPYRIGHT 2016 ALL RIGHT RESERVED. </p>
+        </div>
+    </footer>
+
+    <!-- Team-section -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+     
+    
+</body>
+</html>

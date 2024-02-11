@@ -1,0 +1,272 @@
+.BabasNeue {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.hide{
+    display: none !important ;
+}
+/* Nav-bar - started */
+
+.navbar-nav .nav-item .nav-link.blackitalic-txt {
+    font-style: italic;
+    font-weight: 500;
+    font-size: small;
+}
+.navbar{
+    padding-right: 15%;
+    padding-left: 15%;
+    z-index: 10;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+.navbar-brand img{
+    max-height: 35px;
+}
+.navbar-nav .nav-item a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-nav .nav-item a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Nav-bar - End */
+/* histry section - started */
+
+.History_section{
+    background: url('./Assets/Images/Bg-2.png') no-repeat;
+    background-position: center;
+}
+
+.bg-image {
+    z-index: -1;
+}
+
+.History-section-text {
+    padding-top: 8%;
+}
+
+.Number-1 {
+    font-size: 10rem;
+    opacity: 40%;
+    color: #414f6b;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.history-text h3 {
+    margin-top: 1.5em;
+    margin-left: -1em;
+    font-size: 3rem;
+    color: #414f6b;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.Paragraph-section p{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+@media (max-width: 992px) {
+    .Number-1 {
+        font-size: 7rem;
+    }
+
+    .history-text h3 {
+        font-size: 2rem;
+    }
+    .Paragraph-section p{
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .Number-1 {
+        font-size: 5rem;
+    }
+
+    .history-text h3 {
+        font-size: 1.5rem;
+    }
+    .Paragraph-section p{
+        font-size: xx-small;
+    }
+}
+
+/* histry section carousel  - started */
+
+.History-carosuel-section {
+    background: rgba(65, 79, 107, 0.8);
+    margin-top: 25%;
+}
+.carousel-container {
+    position: relative;
+    width: 60%;
+    max-width: 800px; 
+    overflow: hidden;
+    margin: 0 auto; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 calc(15% - 10px);
+    text-align: center;
+    padding: 20px 3px 20px 3px;
+}
+
+.dots {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #919191;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ffffff;
+}
+
+/* histry section carousel  - Ended */
+/* histry section - Ended */
+
+.climb-text{
+    width: 60%;
+}
+.climb-paragraph{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.Team-Mountain-text{
+    width: 80%;
+    max-width: 800px; 
+}
+.Team-Mountain-container{
+    background: #414f6b;
+}
+
+.Team-Mountain-text1,.Team-Mountain-text2 {
+    cursor: pointer;
+}
+
+/* Tabcontenr section - starated*/
+
+.selected {
+    background: #b0b4be;
+    text-decoration: underline 1px #414f6b;
+    text-decoration-skip-ink: auto; 
+    text-underline-offset: 4px;
+}
+
+.selected h3 {
+    color: #414f6b;
+}
+
+.unselected {
+    background: #414f6b;
+}
+
+.unselected h3 {
+    color: #b0b4be;
+}
+.Tab1{
+    background: url('./Assets/Images/Tab1.jpg') no-repeat;
+    background-position: center;
+}
+.Tab2{
+    background: url('./Assets/Images/Tab2.jpg') no-repeat;
+    background-position: center;
+}
+.Tabs{
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-bottom: 20%;
+}
+
+.Tab-content {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+}
+.Tab-content h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    color: #414f6b;
+}
+.Tabs-row1{
+    margin-bottom: -2px;
+}
+.Tabs-row2{
+    margin-bottom: 20px;
+}
+
+/* Tabcontenr section - Ended */
+
+
+.Footer{
+    background: #414f6b;
+}
+.footerlogo {
+    margin: 10px;
+}
+.Footer-contents{
+    width: 75%;
+    max-width: 800px; 
+}
+.Footer-contents p{
+    color: #63769d;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+
+/* Nav-bar - animation  - started */
+@keyframes slideInFromTop {
+    from {
+        background-color: transparent;
+        transform: translateY(-100%);
+    }
+    to {
+        background-color: white;
+        transform: translateY(0);
+    }
+}
+
+.bg-slide-in {
+    animation: slideInFromTop 1s forwards;
+}
+
+/* Nav-bar - animation - Ended  */
